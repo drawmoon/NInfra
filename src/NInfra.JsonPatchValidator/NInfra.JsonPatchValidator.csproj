@@ -4,7 +4,7 @@
 	  <Nullable>disable</Nullable>
 	  <Version>0.0.1</Version>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
-	  <RepositoryUrl>https://github.com/drawmoon/NInfra/tree/master/src/NInfra.JsonPatchValidator</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/drawmoon/NInfra</RepositoryUrl>
 	</PropertyGroup>
 
     <ItemGroup>

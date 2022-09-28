@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Version>0.0.1</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/drawmoon/NInfra/tree/master/src/NInfra.LinqExtensions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/drawmoon/NInfra</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\LICENSE">
