@@ -1,9 +1,8 @@
-using System;
 using System.Linq.Expressions;
 
 namespace NInfra.LinqExtensions.Internal
 {
-    internal static class ExpressionUtilities
+    internal static class ExpressionUtils
     {
         internal static Expression<Func<TSource, object>> BuildKeySelector<TSource>(ParameterExpression parameterExpression, string propertyName)
         {

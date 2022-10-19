@@ -1,15 +1,11 @@
 ﻿using NInfra.LinqExtensions.Internal;
 using NInfra.LinqExtensions.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 
 namespace NInfra.LinqExtensions.Extensions
 {
-    public static class EnumerableExtensions
+    public static class SortByEnumerableExtensions
     {
-        #region SortBy
         public static IEnumerable<TSource> SortBy<TSource>(this IEnumerable<TSource> sources,
             params SortByExpression[] expressions) => sources.SortBy(action: null, expressions);
 
@@ -38,7 +34,7 @@ namespace NInfra.LinqExtensions.Extensions
 
                 action?.Invoke(expression);
 
-                var keySelector = ExpressionUtilities.BuildKeySelector<TSource>(parameterExpression, expression.Left).Compile();
+                var keySelector = ExpressionUtils.BuildKeySelector<TSource>(parameterExpression, expression.Left).Compile();
                 orderedEnumerable = op == SortOperator.Asc
                     ? sources.OrderBy(keySelector)
                     : sources.OrderByDescending(keySelector);
@@ -46,13 +42,5 @@ namespace NInfra.LinqExtensions.Extensions
 
             return orderedEnumerable;
         }
-        #endregion
-
-        #region Search
-        public static IEnumerable<TSource> Search<TSource>(this IEnumerable<TSource> sources, params SearchExpression[] expressions)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
     }
 }

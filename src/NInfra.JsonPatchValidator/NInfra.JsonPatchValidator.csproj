@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-	  <Nullable>disable</Nullable>
+	  <Nullable>warnings</Nullable>
+	  <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
 	  <Version>0.0.1</Version>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <RepositoryUrl>https://github.com/drawmoon/NInfra</RepositoryUrl>

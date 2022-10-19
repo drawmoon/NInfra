@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<Version>0.0.1</Version>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<RepositoryUrl>https://github.com/drawmoon/NInfra</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Furion" />
+	<PackageReference Include="Furion.Extras.Logging.Serilog" />
+  </ItemGroup>
+
+</Project>

@@ -1,5 +1,7 @@
 <Project>
   <ItemGroup>
+	<PackageVersion Include="Furion" Version="4.5.1" />
+	<PackageVersion Include="Furion.Extras.Logging.Serilog" Version="4.5.1" />
     <PackageVersion Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.9" />
 	<PackageVersion Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
